@@ -1,0 +1,41 @@
+* 设置 Git
+
+** 下载和安装 Git
+
+** 设置 Git
+
+*** 用户名
+    git config --global user.name "Your Name Here"
+    设置你提交时 git 使用的默认名
+*** 邮箱
+    git config --global user.email "your_email@youremail.com"
+    设置你提交时 git 使用的默认邮箱
+
+*** 密码缓存
+    git config --config credential.helper cache
+
+* 创建 Repo
+
+** 在 GitHub 创建新的 repo
+
+** 创建 README 给你的 repo
+
+*** 创建 README 文件
+
+    mkdir ~/project-name
+    cd ~/project-name
+
+    git init
+    设置必要的 Git 文件
+    touch README
+
+*** 提交 README
+
+    git add README
+    git commit -m 'first commit'
+
+*** 推 提交
+
+    git remote add origin https://github.com/username/project-name.git
+    git push origin master
+
